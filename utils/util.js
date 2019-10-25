@@ -19,7 +19,7 @@ const translate = (text, lang) => {
     axios.get(`http://translate.google.cn/translate_a/single?client=gtx&sl=zh-CN&tl=${ lang }&dt=t&q=${ encodeURI(text) }`).then(res => {
       if (res.status === 200) return res.data
     }).then(data => {
-      const successText = data[0][0];
+      const successText = data[0];
       resolve(successText);
     }).catch(e => {
       reject(e);
