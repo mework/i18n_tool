@@ -1,34 +1,40 @@
 import {
-  en,
   zh,
-  el,
+  en,
+  tw,
   ja,
   ko,
-  ru
+  ru,
+  ms,
 } from './lang';
-import {
-  util
-} from './utils';
+import { util, errorLog, changeLog } from './utils';
 import fs from 'fs';
 
+const del = require('del');
 const {
   getType,
   translate
 } = util;
-
-let _zh = JSON.parse(JSON.stringify(zh));
-let _en = JSON.parse(JSON.stringify(en));
 
 // 语种  ru：俄语、ko：韩语、en：英语、zh-TW：中文（繁体）、ja：日语、zh：中文
 const tlKey = {
   ru: 'ru',
   ko: 'ko',
   en: 'en',
-  el: 'zh-TW',
+  tw: 'zh-TW',
   ja: 'ja',
-  zh: 'zh'
+  zh: 'zh',
+  ms: 'ms',
 };
-let fromTextArr = []; // 源文本数组
+
+const fromLang = zh,
+  from = JSON.parse(JSON.stringify(fromLang));
+
+let toLang,  // 要转换到的语言
+  to,
+  toLangKey, // 转换的语言key值和名字
+  toLangGoogleKey, // google翻译语言的key值
+  fromTextArr; // 源文本数组
 
 /**
  * 循环处理数据
@@ -47,8 +53,8 @@ function loop(key, value, position) {
     return;
   }
 
-  let formCurrent = JSON.parse(JSON.stringify(_zh)); // 转换前的值
-  let toCurrent = _en; // 转换后的值
+  let formCurrent = JSON.parse(JSON.stringify(from)); // 转换前的原有数据
+  let toCurrent = to; // 转换后的原有数据
 
   position.forEach(async (item, index) => {
     formCurrent = formCurrent[item];
@@ -60,8 +66,12 @@ function loop(key, value, position) {
     // 取到数组最后一项才得到值
     if (!_toCurrent && position.length - 1 === index) {
       !toCurrent[item] && fromTextArr.push(formCurrent);
+      
       // 赋值操作
-      toCurrent[item] = `{%${formCurrent}%}`;
+      toCurrent[item] = `{{%${ formCurrent }%}}`;
+      
+      // 记录改动点
+      changeLog.info(`${ toLangKey } 改动点：${ position.join('>') }` );
     }
 
     // 移动 toCurrent 指针
@@ -73,34 +83,77 @@ function loop(key, value, position) {
  * 程序启动
  */
 function start() {
-  // 循环开始处理数据
-  for (const [key, item] of Object.entries(_zh)) {
-    loop(key, item, [key]);
-  }
-  // 将数据处理为请求文本格式
-  let requestText = fromTextArr.join('\r\n');
-  // 翻译后的文本数组
-  let toTextArr;
+  return new Promise(async (resolve, reject) => {
+    // 循环开始处理数据
+    for (const [key, item] of Object.entries(from)) {
+      loop(key, item, [key]);
+    }
+    // 将数据处理为请求文本格式
+    let requestText = fromTextArr.join('\r\n');
+    // 翻译后的文本数组
+    let toTextArr;
+    // 翻译请求
+    await translate(requestText, toLangGoogleKey).then(async res => {
+      if (!res) return;
 
-  // 翻译请求
-  translate(requestText, tlKey[5]).then(res => {
-    if (!res) return;
-    // 获取翻译后的文本数组
-    toTextArr = res.map(item => (item[0].replace(/\r\n/g, '')));
+      // 获取翻译后的文本数组
+      toTextArr = res.map(item => (item[0].replace(/\r\n/g, '')));
+      to = JSON.stringify(to);
 
-    // 替换文本
-    fromTextArr.forEach((item, index) => {
-      _en = JSON.parse(JSON.stringify(_en).replace(new RegExp(`{%${item}%}`, 'g'), toTextArr[index]));
+      // 替换文本并转化中文双引号为单引号
+      fromTextArr.forEach((item, index) => {
+        to = to.replace(new RegExp(`{{%${item}%}}`, 'g'), toTextArr[index].replace(/"/g, ''));
+      })
+
+      // 写入文本
+      to = `export default ${to}`;
+      
+      fs.writeFileSync(`./build/${ toLangKey }.js`, to);
+
+      console.log(`${ toLangKey }写入完成`);
+      resolve();
+
+    }).catch(e => {
+      errorLog.error('translate错误', e);
+      reject();
     })
-
-    // 写入文本
-    _en = `export default ${JSON.stringify(_en)}`;
-    fs.writeFile('./build/en.js', _en, 'utf8', () => {
-      console.log('写入完成')
-    })
-  }).catch(e => {
-    console.log('e', e);
   })
 }
 
-start();
+/**
+ * 运行
+ */
+async function run() {
+  // 删除文件夹
+  del.sync(['./build'])
+  
+  // 创建文件夹
+  fs.mkdirSync('./build');
+
+  const langArr = [
+    { source: ru, key: 'ru' },
+    { source: ko, key: 'ko' },
+    { source: en, key: 'en' },
+    { source: tw, key: 'tw' },
+    { source: ja, key: 'ja' },
+    { source: ms, key: 'ms' },
+  ]
+
+  for (let i = 0; i < langArr.length; i++) {
+    const item = langArr[i];
+    toLang = item.source;
+    to = JSON.parse(JSON.stringify(toLang));
+    toLangKey = item.key;
+    toLangGoogleKey = tlKey[toLangKey];
+    fromTextArr = [];
+    changeLog.info(`${ toLangKey } 改动点开始 -----------------------------------------------------` );
+    await start();
+    changeLog.info(`${ toLangKey } 改动点结束 -----------------------------------------------------` );
+  }
+
+  changeLog.info(`单次翻译结束-----------------------------------------------------` );
+  changeLog.info(`----------------------------------------------------------------------------------------------------------` );
+  changeLog.info(`----------------------------------------------------------------------------------------------------------` );
+};
+
+run();

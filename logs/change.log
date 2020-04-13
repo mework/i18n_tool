@@ -1,0 +1,184 @@
+[2020-04-13T11:41:12.536] [INFO] change - ru 改动点开始 -----------------------------------------------------
+[2020-04-13T11:41:13.173] [INFO] change - ru 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:41:14.362] [INFO] change - ru 改动点：otc>soldOutBefore
+[2020-04-13T11:41:14.364] [INFO] change - ru 改动点：otc>soldOutAfter
+[2020-04-13T11:41:14.431] [INFO] change - ru 改动点：otc>index>paymentTip
+[2020-04-13T11:41:15.368] [INFO] change - ru 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:41:15.369] [INFO] change - ru 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:41:15.371] [INFO] change - ru 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:41:15.373] [INFO] change - ru 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:41:15.385] [INFO] change - ru 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:41:15.386] [INFO] change - ru 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:41:15.387] [INFO] change - ru 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:41:15.676] [INFO] change - ru 改动点结束 -----------------------------------------------------
+[2020-04-13T11:41:15.678] [INFO] change - ko 改动点开始 -----------------------------------------------------
+[2020-04-13T11:41:16.365] [INFO] change - ko 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:41:17.401] [INFO] change - ko 改动点：otc>soldOutBefore
+[2020-04-13T11:41:17.402] [INFO] change - ko 改动点：otc>soldOutAfter
+[2020-04-13T11:41:17.446] [INFO] change - ko 改动点：otc>index>paymentTip
+[2020-04-13T11:41:18.328] [INFO] change - ko 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:41:18.329] [INFO] change - ko 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:41:18.330] [INFO] change - ko 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:41:18.333] [INFO] change - ko 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:41:18.343] [INFO] change - ko 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:41:18.344] [INFO] change - ko 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:41:18.345] [INFO] change - ko 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:41:18.562] [INFO] change - ko 改动点结束 -----------------------------------------------------
+[2020-04-13T11:41:18.564] [INFO] change - en 改动点开始 -----------------------------------------------------
+[2020-04-13T11:41:19.068] [INFO] change - en 改动点：main>googleplay
+[2020-04-13T11:41:19.183] [INFO] change - en 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:41:20.263] [INFO] change - en 改动点：otc>soldOutBefore
+[2020-04-13T11:41:20.264] [INFO] change - en 改动点：otc>soldOutAfter
+[2020-04-13T11:41:20.314] [INFO] change - en 改动点：otc>index>paymentTip
+[2020-04-13T11:41:21.134] [INFO] change - en 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:41:21.135] [INFO] change - en 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:41:21.136] [INFO] change - en 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:41:21.138] [INFO] change - en 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:41:21.149] [INFO] change - en 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:41:21.150] [INFO] change - en 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:41:21.151] [INFO] change - en 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:41:21.356] [INFO] change - en 改动点结束 -----------------------------------------------------
+[2020-04-13T11:41:21.357] [INFO] change - el 改动点开始 -----------------------------------------------------
+[2020-04-13T11:41:21.935] [INFO] change - el 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:41:22.471] [INFO] change - el 改动点：personal>wallet>text18
+[2020-04-13T11:41:22.472] [INFO] change - el 改动点：personal>wallet>text19
+[2020-04-13T11:41:22.473] [INFO] change - el 改动点：personal>wallet>text20
+[2020-04-13T11:41:22.474] [INFO] change - el 改动点：personal>wallet>text21
+[2020-04-13T11:41:22.586] [INFO] change - el 改动点：personal>placeholder_22
+[2020-04-13T11:41:22.588] [INFO] change - el 改动点：personal>placeholder_23
+[2020-04-13T11:41:22.589] [INFO] change - el 改动点：personal>placeholder_24
+[2020-04-13T11:41:22.590] [INFO] change - el 改动点：personal>placeholder_25
+[2020-04-13T11:41:22.699] [INFO] change - el 改动点：globalNode>southAfrica
+[2020-04-13T11:41:22.700] [INFO] change - el 改动点：globalNode>Mongolia
+[2020-04-13T11:41:22.938] [INFO] change - el 改动点：otc>soldOutBefore
+[2020-04-13T11:41:22.939] [INFO] change - el 改动点：otc>soldOutAfter
+[2020-04-13T11:41:22.981] [INFO] change - el 改动点：otc>index>paymentTip
+[2020-04-13T11:41:23.794] [INFO] change - el 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:41:23.795] [INFO] change - el 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:41:23.796] [INFO] change - el 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:41:23.799] [INFO] change - el 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:41:23.808] [INFO] change - el 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:41:23.809] [INFO] change - el 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:41:23.810] [INFO] change - el 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:41:24.010] [INFO] change - el 改动点结束 -----------------------------------------------------
+[2020-04-13T11:41:24.011] [INFO] change - ja 改动点开始 -----------------------------------------------------
+[2020-04-13T11:41:24.595] [INFO] change - ja 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:41:24.608] [INFO] change - ja 改动点：fund>finance>transferinOffSite
+[2020-04-13T11:41:24.609] [INFO] change - ja 改动点：fund>finance>transferoutOffSite
+[2020-04-13T11:41:25.446] [INFO] change - ja 改动点：login>text_19
+[2020-04-13T11:41:25.447] [INFO] change - ja 改动点：login>text_20
+[2020-04-13T11:41:25.609] [INFO] change - ja 改动点：otc>soldOutBefore
+[2020-04-13T11:41:25.610] [INFO] change - ja 改动点：otc>soldOutAfter
+[2020-04-13T11:41:25.656] [INFO] change - ja 改动点：otc>index>paymentTip
+[2020-04-13T11:41:26.401] [INFO] change - ja 改动点：application>submittedToken
+[2020-04-13T11:41:26.408] [INFO] change - ja 改动点：application>submitTime
+[2020-04-13T11:41:26.409] [INFO] change - ja 改动点：application>submitStatus
+[2020-04-13T11:41:26.418] [INFO] change - ja 改动点：application>verify
+[2020-04-13T11:41:26.525] [INFO] change - ja 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:41:26.526] [INFO] change - ja 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:41:26.527] [INFO] change - ja 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:41:26.529] [INFO] change - ja 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:41:26.539] [INFO] change - ja 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:41:26.541] [INFO] change - ja 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:41:26.542] [INFO] change - ja 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:41:26.741] [INFO] change - ja 改动点结束 -----------------------------------------------------
+[2020-04-13T11:41:26.743] [INFO] change - ms 改动点开始 -----------------------------------------------------
+[2020-04-13T11:41:28.314] [INFO] change - ms 改动点：otc>soldOutBefore
+[2020-04-13T11:41:28.315] [INFO] change - ms 改动点：otc>soldOutAfter
+[2020-04-13T11:41:29.415] [INFO] change - ms 改动点结束 -----------------------------------------------------
+[2020-04-13T11:41:29.415] [INFO] change - 单次翻译结束-----------------------------------------------------
+[2020-04-13T11:41:29.415] [INFO] change - ----------------------------------------------------------------------------------------------------------
+[2020-04-13T11:41:29.415] [INFO] change - ----------------------------------------------------------------------------------------------------------
+[2020-04-13T11:50:07.749] [INFO] change - ru 改动点开始 -----------------------------------------------------
+[2020-04-13T11:50:08.405] [INFO] change - ru 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:50:09.624] [INFO] change - ru 改动点：otc>soldOutBefore
+[2020-04-13T11:50:09.625] [INFO] change - ru 改动点：otc>soldOutAfter
+[2020-04-13T11:50:09.681] [INFO] change - ru 改动点：otc>index>paymentTip
+[2020-04-13T11:50:10.731] [INFO] change - ru 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:50:10.732] [INFO] change - ru 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:50:10.733] [INFO] change - ru 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:50:10.735] [INFO] change - ru 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:50:10.746] [INFO] change - ru 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:50:10.748] [INFO] change - ru 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:50:10.749] [INFO] change - ru 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:50:11.056] [INFO] change - ru 改动点结束 -----------------------------------------------------
+[2020-04-13T11:50:11.058] [INFO] change - ko 改动点开始 -----------------------------------------------------
+[2020-04-13T11:50:11.723] [INFO] change - ko 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:50:12.844] [INFO] change - ko 改动点：otc>soldOutBefore
+[2020-04-13T11:50:12.845] [INFO] change - ko 改动点：otc>soldOutAfter
+[2020-04-13T11:50:12.891] [INFO] change - ko 改动点：otc>index>paymentTip
+[2020-04-13T11:50:13.712] [INFO] change - ko 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:50:13.713] [INFO] change - ko 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:50:13.715] [INFO] change - ko 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:50:13.717] [INFO] change - ko 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:50:13.727] [INFO] change - ko 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:50:13.728] [INFO] change - ko 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:50:13.729] [INFO] change - ko 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:50:13.943] [INFO] change - ko 改动点结束 -----------------------------------------------------
+[2020-04-13T11:50:13.944] [INFO] change - en 改动点开始 -----------------------------------------------------
+[2020-04-13T11:50:14.466] [INFO] change - en 改动点：main>googleplay
+[2020-04-13T11:50:14.605] [INFO] change - en 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:50:15.640] [INFO] change - en 改动点：otc>soldOutBefore
+[2020-04-13T11:50:15.641] [INFO] change - en 改动点：otc>soldOutAfter
+[2020-04-13T11:50:15.682] [INFO] change - en 改动点：otc>index>paymentTip
+[2020-04-13T11:50:16.507] [INFO] change - en 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:50:16.508] [INFO] change - en 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:50:16.510] [INFO] change - en 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:50:16.512] [INFO] change - en 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:50:16.522] [INFO] change - en 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:50:16.523] [INFO] change - en 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:50:16.524] [INFO] change - en 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:50:16.772] [INFO] change - en 改动点结束 -----------------------------------------------------
+[2020-04-13T11:50:16.774] [INFO] change - tw 改动点开始 -----------------------------------------------------
+[2020-04-13T11:50:17.367] [INFO] change - tw 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:50:18.020] [INFO] change - tw 改动点：personal>wallet>text18
+[2020-04-13T11:50:18.021] [INFO] change - tw 改动点：personal>wallet>text19
+[2020-04-13T11:50:18.022] [INFO] change - tw 改动点：personal>wallet>text20
+[2020-04-13T11:50:18.023] [INFO] change - tw 改动点：personal>wallet>text21
+[2020-04-13T11:50:18.159] [INFO] change - tw 改动点：personal>placeholder_22
+[2020-04-13T11:50:18.160] [INFO] change - tw 改动点：personal>placeholder_23
+[2020-04-13T11:50:18.161] [INFO] change - tw 改动点：personal>placeholder_24
+[2020-04-13T11:50:18.163] [INFO] change - tw 改动点：personal>placeholder_25
+[2020-04-13T11:50:18.311] [INFO] change - tw 改动点：globalNode>southAfrica
+[2020-04-13T11:50:18.312] [INFO] change - tw 改动点：globalNode>Mongolia
+[2020-04-13T11:50:18.562] [INFO] change - tw 改动点：otc>soldOutBefore
+[2020-04-13T11:50:18.564] [INFO] change - tw 改动点：otc>soldOutAfter
+[2020-04-13T11:50:18.608] [INFO] change - tw 改动点：otc>index>paymentTip
+[2020-04-13T11:50:19.424] [INFO] change - tw 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:50:19.425] [INFO] change - tw 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:50:19.426] [INFO] change - tw 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:50:19.428] [INFO] change - tw 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:50:19.438] [INFO] change - tw 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:50:19.439] [INFO] change - tw 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:50:19.441] [INFO] change - tw 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:50:19.659] [INFO] change - tw 改动点结束 -----------------------------------------------------
+[2020-04-13T11:50:19.661] [INFO] change - ja 改动点开始 -----------------------------------------------------
+[2020-04-13T11:50:20.243] [INFO] change - ja 改动点：fund>funds>pleaseInputVal
+[2020-04-13T11:50:20.256] [INFO] change - ja 改动点：fund>finance>transferinOffSite
+[2020-04-13T11:50:20.257] [INFO] change - ja 改动点：fund>finance>transferoutOffSite
+[2020-04-13T11:50:21.180] [INFO] change - ja 改动点：login>text_19
+[2020-04-13T11:50:21.181] [INFO] change - ja 改动点：login>text_20
+[2020-04-13T11:50:21.341] [INFO] change - ja 改动点：otc>soldOutBefore
+[2020-04-13T11:50:21.343] [INFO] change - ja 改动点：otc>soldOutAfter
+[2020-04-13T11:50:21.389] [INFO] change - ja 改动点：otc>index>paymentTip
+[2020-04-13T11:50:22.092] [INFO] change - ja 改动点：application>submittedToken
+[2020-04-13T11:50:22.102] [INFO] change - ja 改动点：application>submitTime
+[2020-04-13T11:50:22.104] [INFO] change - ja 改动点：application>submitStatus
+[2020-04-13T11:50:22.115] [INFO] change - ja 改动点：application>verify
+[2020-04-13T11:50:22.225] [INFO] change - ja 改动点：layer>setRemindLayer>limitError
+[2020-04-13T11:50:22.226] [INFO] change - ja 改动点：layer>setRemindLayer>emailEmptyError
+[2020-04-13T11:50:22.227] [INFO] change - ja 改动点：layer>setRemindLayer>emailFormatError
+[2020-04-13T11:50:22.229] [INFO] change - ja 改动点：layer>setRemindLayer>saveSuccess
+[2020-04-13T11:50:22.240] [INFO] change - ja 改动点：layer>tradePasswordLayer>setTradePasswordError
+[2020-04-13T11:50:22.241] [INFO] change - ja 改动点：layer>tradePasswordLayer>setTradePasswordSuccess
+[2020-04-13T11:50:22.242] [INFO] change - ja 改动点：layer>tradePasswordLayer>closeTradePasswordSuccess
+[2020-04-13T11:50:22.451] [INFO] change - ja 改动点结束 -----------------------------------------------------
+[2020-04-13T11:50:22.453] [INFO] change - ms 改动点开始 -----------------------------------------------------
+[2020-04-13T11:50:24.176] [INFO] change - ms 改动点：otc>soldOutBefore
+[2020-04-13T11:50:24.177] [INFO] change - ms 改动点：otc>soldOutAfter
+[2020-04-13T11:50:25.291] [INFO] change - ms 改动点结束 -----------------------------------------------------
+[2020-04-13T11:50:25.291] [INFO] change - 单次翻译结束-----------------------------------------------------
+[2020-04-13T11:50:25.292] [INFO] change - ----------------------------------------------------------------------------------------------------------
+[2020-04-13T11:50:25.292] [INFO] change - ----------------------------------------------------------------------------------------------------------
+[2020-04-13T11:56:20.508] [INFO] change - ru 改动点开始 -----------------------------------------------------
+[2020-04-13T11:56:40.333] [INFO] change - ru 改动点开始 -----------------------------------------------------

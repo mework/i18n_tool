@@ -155,6 +155,7 @@ export default {
       descContent: '描述内容',
       imgBrowse: '图片浏览',
       replyTime: '回复时间',
+      addToTime: '追加时间',
       addToProblem: '追加问题',
       addProblemHintPre: '请输入追加问题，不超过',
       addProblemHintNext: '个字符。',
@@ -184,7 +185,7 @@ export default {
       inviteFriendsText2: '邀请好友开启全新交易体验',
       changeOld: '切换旧版',
       changeNew: '切换新版',
-      more: '更多'
+      more: '更多',
     },
     ft: {
       help: '帮助中心',
@@ -226,6 +227,7 @@ export default {
       '乍得(CHAD) +235',
       '智利(CHILE) +56',
       '中国(CHINA) +86',
+      '新加坡(REPUBLIC OF SINGAPORE) +65',
       '刚果(CONGO) +242',
       '库克群岛(COOK ISLANDS) +682',
       '科特迪瓦(CÔTE DIVOIRE) +225',
@@ -314,6 +316,8 @@ export default {
     }
   },
   user: {
+    selectImg: '选择图片',
+
     side: {
       myapi: '我的API',
       apidocd: 'API文档'
@@ -340,6 +344,7 @@ export default {
       delete_succ: '删除成功',
       submission: '提交成功',
       upload_success: '上传成功',
+      upload_error: '上传失败',
       add_message_content: '请输入追加问题内容',
       see: '查看',
       delete: '删除',
@@ -365,6 +370,7 @@ export default {
       newapi: '新建API',
       lable: '备注标签',
       token: 'API token',
+      CIAPI: 'CI级API',
       key: 'SecretKey',
       operation: '操作',
       upload: '修改',
@@ -506,9 +512,13 @@ export default {
     my_message: '我的消息',
     no_message: '没有消息',
     kind: '种类',
-    delete_hint: '是否删除选中的消息？'
+    delete_hint: '是否删除选中的消息？',
+    unread: '未读',
+    readed: '已读',
   },
   main: {
+    myAward: '我的奖励',
+    triggeringConditions: '触发条件',
     rank: '排名',
     quotation: '行情',
     ranking: '涨幅榜',
@@ -542,6 +552,7 @@ export default {
     app_download: 'APP下载',
     client_download: '电脑',
     downNotice: '下载客户端',
+    downAndroidAPK: '下载安卓APK',
     android_down_name: 'Android 安卓',
     ios_down_name: 'IOS 苹果',
     sweep_download: '手机扫码下载APP',
@@ -567,6 +578,7 @@ export default {
     downAppText: '覆盖 iOS 、Android 、Windows 、Mac 多个平台，支持全业务功能',
     windows: 'Windows 客户端',
     mac: 'MAC 客户端',
+    andriod: 'Andriod APK',
     registerText: '请输入您的邮箱或手机号码进行注册',
     otc_help: '法币交易帮助',
     otc_help01: '1.请选择在线商家进行交易',
@@ -589,13 +601,16 @@ export default {
     netboxTitle: '完美融合交易策略',
     netboxDes: 'LOEX API 文档，让您更高效的在 LOEX 交易',
     netboxBtnTitle: '官方',
-    netboxBtnDes: 'LOEX API 文档'
+    netboxBtnDes: 'LOEX API 文档',
+    googleplay: 'Google play'
   },
   kLine: {
     line: '分时'
   },
   // 资金管理
   fund: {
+    award: '奖励',
+    batch_number: '流水号',
     funds_manage: '资金管理',
     finance_manage: '资金流水',
     address_manage: '地址管理',
@@ -631,9 +646,13 @@ export default {
     numberID: '数字ID',
     pleaseInputNumber: '请输入数字ID',
     actualToAccount: '实际到账',
-    search_placeholder: '搜索订单号',
+    search_placeholder: '搜索订单号/交易对象',
     // 资金管理
     funds: {
+      defaultWithdraw: '普通提币',
+      innerWithdraw: '内部转账',
+      largeWithdraw: '大额提币',
+      addCommonUseContact: '添加常用联系人',
       deposit: '充币',
       withdraw: '提币',
       transferList: '划转',
@@ -670,6 +689,9 @@ export default {
       wait_note: '提币申请已提交，请耐心等待',
       applyTime: '申请时间',
       withdraw_addr: '提币地址',
+      transfer_add: '转账账号/地址',
+      add_account_or_address: '添加账号/地址',
+      account_or_address: '账号/地址',
       min_withdraw: '最小提币额',
       changeWithdrawAddr: '请选择提币地址',
       transfer: '资金划转',
@@ -732,6 +754,7 @@ export default {
       confirm_deleteAddr: '确认删除该提币地址？',
       delete_notice: '删除地址会保留之前的提现记录。',
       InputWithdrawAddr: '请输入提币地址',
+      InputAccount: '请输入账号',
       InputAddrLabel: '请输入地址标签',
       pleaseInput: '请输入',
       addSuccess: '新增成功',
@@ -742,6 +765,20 @@ export default {
   },
   // 交易中心
   trade: {
+    bomb: '弹',
+    imgSendLimit: '图片发送次数已到达限制',
+    showBarrage: '显示弹幕',
+    sendBarrage: '发送弹幕',
+    fullScreen: '全屏',
+    topScreen: '上方',
+    totalGet: '合计获得',
+
+    publish: '发表',
+    barrage: '弹幕',
+    pleaseInputBarrage: '请输入弹幕内容',
+
+    totalSpend: '合计花费',
+    average: '均价',
     latestPrice: '最新价',
     highestPrice: '最高价',
     minimumPrice: '最低价',
@@ -756,6 +793,7 @@ export default {
     marketSet: '自选',
     searchSymbols: '查找币种',
     symbols: '币种',
+    coinPair: '币对',
     noSymbols: '暂无货币',
     latestDeal: '最新成交',
     time: '时间',
@@ -821,6 +859,8 @@ export default {
     deal: '成交',
     date: '日期',
     text_1: '（成交只统计 USDT 市场交易对）',
+    startTrade: '即将上线',
+    stopTrade: '暂停交易',
     handicap: {
       depthMerge: '深度合并',
       handicap: '盘口',
@@ -837,6 +877,9 @@ export default {
     transaction: {
       limit: '限价',
       market: '市价',
+      checkFullStop: '止盈止损',
+      explainText: '当市场最新价达到触发价时，按照预先设置的委托价格和数量自动下单',
+      triggerPrice: '触发价',
       buy: '买入',
       sell: '卖出',
       amount: '数量',
@@ -848,6 +891,19 @@ export default {
   },
   // 个人中心
   personal: {
+    soldOutBefore: '本资产已下架，提币需要使用',
+    soldOutAfter: '作为手续费，请确保您有足够的手续费！',
+    notEnoughFeeBefore: '手续费不足，请',
+
+    balanceTallToLow: '总余额从高到低排列',
+    inviteFriendsHintText: '邀请好友参与交易可获得手续费奖励',
+    lookAwardRule: '查看奖励规则',
+
+    setRemind: '提醒设置',
+
+    doneAuth: '我已完成认证',
+    tradePassWord: '交易密码',
+    setText: '去设置',
     payName: '姓名',
     searchCoin: '搜索币种',
     unabled: '暂未开放',
@@ -858,6 +914,7 @@ export default {
       bind: '绑定支付宝',
       moneyQR: '二维码：',
       account: '支付宝账号',
+      qrcode: '支付宝二维码',
       inputName: '请输入姓名',
       inputAccount: '请输入支付宝账号',
       uploadQR: '上传支付宝收款码',
@@ -871,9 +928,14 @@ export default {
       bind: '绑定微信',
       moneyQR: '二维码：',
       account: '微信账号',
+      qrcode: '微信二维码',
       inputName: '请输入姓名',
       inputAccount: '请输入微信账号',
+      uploadQR: '上传微信收款码',
       inputmoneyQR: '请上传收款码'
+    },
+    paypal: {
+      bindTips: '请绑定paypal',
     },
     revokeText: '确定撤销提币？',
     bindTips: '请绑定银行卡',
@@ -1002,6 +1064,9 @@ export default {
       tradingVolume: '成交金额',
       availableQuantity: '可用数量',
       numberOfFrozen: '冻结数量',
+      availableBalance: '可用余额',
+      frozenBalance: '冻结余额',
+      totalBalance: '总余额',
       notArriveToOurAccount: '未到账',
       paymentHasBeenReceived: '已到账',
       abnormal: '异常',
@@ -1050,6 +1115,7 @@ export default {
       deposit: '充币数据',
       withdraw: '提币数据',
       trade: '交易数据',
+      tradeCount: '交易统计',
       order: '订单数据',
       position: '持仓数据',
       tapToRemove: '点击删除',
@@ -1059,7 +1125,29 @@ export default {
       withdrawTotal: '提币总量',
       tradeTotal: '交易总量',
       holdTotal: '持仓总量',
-      copy: '复制'
+      copy: '复制',
+      pleaseSelectDate: '请选择日期',
+      buyGross: '买入总量',
+      sellGross: '卖出总量',
+      buyCount: '买入笔数',
+      sellCount: '卖出笔数',
+      score: '分',
+      search: '搜索',
+      scoreTip: '本指数不作为投资理财导向',
+      compositeIndex: '综合指数',
+      volumeIndicator: '交易量指标',
+      transactionRatioIndicator: '交易比例指标',
+      depositAndWithdrawalIndicators: '充提币指标',
+      currencyStatusIndicator: '币种状态指标',
+      symbolFlowScoreIndicator: '流动性指标',
+      transactionDistribution: '交易分布',
+      depositDistribution: '充币分布',
+      withdrawalDistribution: '提币分布',
+      trafficDistribution: '流量分布',
+      tradeFrequency: '交易人次',
+      depositFrequency: '充币人次',
+      withdrawalFrequency: '提币人次',
+      loginFrequency: '登录人次',
     },
     openGoogleVerifyStep: {
       step1: '下载App',
@@ -1082,6 +1170,7 @@ export default {
       hintMsg2: '选择您要上传的证件类型',
       hintMsg3: '填写您有效证件的基本信息',
       hintMsg4: '上传有效证件照片，照片大小不超过 2Mb (仅支持 jpg/png 格式)',
+      hintMsg5: '请扫描下方二维码进行身份认证',
       idCardPhoto1: '上传身份证正面',
       idCardPhoto2: '上传身份证背面',
       idCardPhoto3: '上传人脸照',
@@ -1134,6 +1223,10 @@ export default {
       text15: '文件大小超过5M！',
       text16: '根据您提供的问题描述和图片，24小时内反馈申诉结果；',
       text17: '频繁提交申诉并败诉将会影响您在 LOEX 的账户评级，请谨慎操作。',
+      text18: '只支持 jpg/png/jpeg 格式文件，且不超过',
+      text19: 'M',
+      text20: '可上传 ',
+      text21: ' 张图片(非必选)',
       continue: '继续'
     },
     phoneVerify: '手机验证',
@@ -1156,6 +1249,7 @@ export default {
     pleaseInputAccount: '请输入您的账号',
     pleaseInputOnYourPhone: '请输入您在手机',
     receivedMessage: '上收到的验证码',
+    bindAuthMessage: '上绑定的验证码',
     cantReceiveMessage: '收不到验证码？',
     sendCaptcha: '发送验证码',
     captchaError: '验证码有误',
@@ -1175,6 +1269,7 @@ export default {
     notData: '暂无数据',
     tiptl: '提示',
     editPhone: '修改手机号',
+    slideToAuth: '向右滑动完成验证',
     bindPhone: '绑定手机号',
     confirmEdit: '确认修改',
     confirmSubmit: '确认提交',
@@ -1233,6 +1328,10 @@ export default {
     placeholder_19: '非中国用户请选择护照',
     placeholder_20: '照片过大，只支持上传1M以内的照片！',
     placeholder_21: '请您上传一张手持护照正面照和个人签字的照片，个人签名的内容包含Loex网址，真实姓名和当前日期。请确保照片和个人签字的内容清晰可见<br /> 照片要求：  头像清晰  护照号码清晰  包含Loex网址 个人签名  包含当天日期',
+    placeholder_22: '照片过大，只支持上传',
+    placeholder_23: 'M以内的照片！',
+    placeholder_24: '最多只能上传',
+    placeholder_25: '张图片！',
     q_upload: '请上传',
     accountType: '账户类型',
     China_id: '身份证',
@@ -1337,7 +1436,9 @@ export default {
     Bangkok: '曼谷，泰国',
     Singapore: '新加坡',
     Indonesia: '印度尼西亚',
-    Australia: '澳大利亚'
+    Australia: '澳大利亚',
+    southAfrica: '开普敦，南非',
+    Mongolia: '乌兰巴托，蒙古'
   },
   jobChance: {
     text1: '工作机会',
@@ -1504,7 +1605,10 @@ export default {
     upgrade: '服务器正在升级',
     invitation: '交易明细',
     agent_list: '经济人管理',
-    mining: '交易挖矿'
+    mining: '交易挖矿',
+    community: '社区节点',
+    communityDetail: '社区节点详情',
+    projectCentre: '项目中心',
   },
   pagination: {
     first: '首页',
@@ -1563,6 +1667,30 @@ export default {
   },
   // 法币
   otc: {
+    stop: '暂停',
+    open: '开启',
+    openAdSuccess: '开启广告成功',
+    stopAdSuccess: '暂停广告成功',
+    soldOutBefore: '本资产已下架，提币需要使用',
+    soldOutAfter: '作为手续费，请确保您有足够的手续费！',
+
+    please: '请',
+    phone: '电话',
+    confirmHintText: '闪电交易为系统匹配商家，请仔细检查订单信息。',
+    confirmBuy: '确定购买',
+    confirmSell: '确定出售',
+
+    changeVia: '更换头像',
+    contactEachOther: '联系对方',
+    noTelPhone: '对方暂无手机号码',
+    add: '添加',
+    addSuccess: '添加成功',
+    addBlackList: '添加黑名单',
+    lookBlackList: '查看黑名单',
+    blackList: '黑名单列表',
+    inputAcconutOrName: '输入账号/姓名',
+    blackListAccount: '黑名单账号',
+    blackListName: '黑名单姓名',
     onlyShowPay: '只显示我已付款',
     onlyShowUnpay: '只显示待支付',
     onlyShowHePay: '只显示对方已付款',
@@ -1579,10 +1707,12 @@ export default {
     nowEmpty: '暂无',
     index: {
       business: '商家',
+      oppositeSide: '对方',
       number: '剩余',
       quota: '限额',
       price: '单价：',
       payment: '支付方式',
+      addPayment: '新增支付方式',
       paymentTip: '（可多选）',
       volume: '剩余：',
       priceName: '单价',
@@ -1632,6 +1762,7 @@ export default {
       completed: '已完成订单',
       allOrders: '全部订单',
       OutBusiness: '退出商家资格',
+      OutBusinessSuccess: '退出商家资格申请成功',
       MerchantConsole: '商家控制台',
       blacklist: '黑名单',
       type: '类型',
@@ -1665,7 +1796,6 @@ export default {
       hisSell: 'TA的出售',
       go_payment: '去设置',
       spot: '点我上传'
-
     },
     publish: {
       baseInfo: '基础信息',
@@ -1756,6 +1886,10 @@ export default {
       inputBankSubAccount: '请输入开户分行名称'
     },
     order: {
+      unpay: '未付款',
+      yetPay: '已支付',
+      waitHePay: '等待对方付款',
+
       nearOrder: '30 日成单',
       inputMessage: '输入信息',
       onsend: '发送',
@@ -1831,9 +1965,9 @@ export default {
       mustName: '您必须使用实名为“',
       mustNameLast: '”的账户，向以下账户转帐',
       needPayText: '对方向您以下收款信息支付款项',
-      unPay: '待支付，请向商家支付',
-      waitPay: '已支付，等待商家放币',
-      yiPay: '已支付，等待商家放币',
+      unPay: '待支付，请向对方支付',
+      waitPay: '已支付，等待对方放币',
+      yiPay: '已支付，等待对方放币',
       moneyQR: '二维码',
       alipay: '扫描支付宝二维码付款',
       wxpay: '扫描微信二维码付款',
@@ -1915,13 +2049,13 @@ export default {
       otc_type: '法币类型',
       otc_price: '金额',
       fast_buy: '闪电买币',
-      fast_buy_number: '请输入购买数量',
-      fast_buy_price: '请输入购买金额',
+      fast_buy_number: '请输入购买的数量',
+      fast_buy_price: '请输入购买的金额',
       fast_buyNumber: '按数量买入',
       fast_buyPrice: '按金额买入',
       fast_sell: '闪电卖币',
-      fast_sell_number: '请输入出售数量',
-      fast_sell_price: '请输入出售金额',
+      fast_sell_number: '请输入出售的数量',
+      fast_sell_price: '请输入出售的金额',
       fast_sellNumber: '按数量卖出',
       fast_sellPrice: '按金额卖出'
     },
@@ -1957,7 +2091,8 @@ export default {
     obtained: '已获得返还金额',
     invitation_record: '邀请记录',
     Account: '账号',
-    Registration_time: '注册时间'
+    Registration_time: '注册时间',
+    awardCode: '奖励记录',
   },
   // 合约
   co: {
@@ -2402,5 +2537,64 @@ export default {
     EOSCoinText: 'EOS 由注册开曼群岛的 Block.One 公司负责开发，是一个类似操作系统的区块链架构平台，旨在实现分布式应用的性能扩展。',
     LTCCOin: 'LTC',
     LTCCOinText: '莱特币是 MIT/X11 许可下的一个开源软件项目，在技术上和比特币具有相同的实现原理，基于一种开源的加密协议，不受中央机构管理。'
+  },
+  layer: {
+    setRemindLayer: {
+      rechargeLimit: '充币阈值',
+      withdrawLimit: '提币阈值',
+      orderLimit: '订单阈值',
+      limitError: '必须大于 0',
+      emailEmptyError: '邮箱不能为空',
+      emailFormatError: '请输入正确的邮箱格式',
+      save: '保存',
+      saveSuccess: '保存成功',
+    },
+    tradePasswordLayer: {
+      pleaseSetAccount: '请设置您账号',
+      pleaseInputAccount: '请输入您账号',
+      theTradePassword: '的交易密码',
+      setTradePassword: '设置交易密码',
+      setTradePasswordTips: '设置6位数纯数字交易密码',
+      comfirmTradePassword: '确认交易密码',
+      notSetGoTrade: '不设置，直接交易',
+      forgetTradePassword: '忘记交易密码？',
+
+      setTradePasswordError: '两次输入的交易密码不一致，请重新输入',
+      setTradePasswordSuccess: '设置交易密码成功',
+      closeTradePasswordSuccess: '关闭交易密码成功'
+    },
+    noticeLayer: {
+      noticeText: '本站目前不支持来自下列国家或地区的客户：古巴、伊朗、朝鲜、克里米亚、苏丹、马来西亚、叙利亚、中国、美国 [包括所有美国领土，如波多黎各、美属萨摩亚、关岛、北马里亚纳群岛邦、美属维尔京群岛（圣克罗伊岛，圣约翰岛和圣托马斯岛）]、孟加拉国、玻利维亚、厄瓜多尔和吉尔吉斯斯坦。如欲了解更多详情，请参阅我们的服务条款。',
+      noticeOptions: '一个月内不再提示',
+      iKnow: '我知道了'
+    }
+  },
+
+  merchant: {
+    AD: '广告',
+    applyMerchant: {
+      otcApplyMerchant: '法币商家申请',
+      tipsText: '请保证您的法币资产不低于 1000USDT，申请成功后保证金将被冻结，退出商家赎回保证金！',
+      otcProtocol: '《法币商家协议》',
+      readHint: '请先阅读并同意《法币商家协议》',
+      publishADSubtitle: '商家可自由发布广告，灵活、便捷的购买和出售数字货币',
+      blackListSubtitle: '商家可自由配置黑名单用户，单独不与黑名单用户交易',
+      morePay: '多支付方式',
+      morePaySubtitle: '支持多种在线支付方式，更多选择覆盖更广地区和用户',
+      cashDeposit: '保证金',
+      pleaseFinish: '请先完成',
+      merchantExit: '退出商家',
+      applyReview: '申请审核中',
+      exitReview: '退出审核中',
+      applySuccess: '提交申请成功',
+      cancelApplySuccess: '取消申请成功',
+    }
+  },
+  community: {
+    note: '社区节点',
+    organization: '组织',
+    relevance: '关联',
+    cooperate: '共赢',
+    application: '申请成为节点',
   }
 }

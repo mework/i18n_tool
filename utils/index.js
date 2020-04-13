@@ -1,9 +1,10 @@
 import axios from './axios';
 import util from './util';
-import logs from './logs';
+import { errorLog, changeLog } from './logs';
 
 export {
   axios,
   util,
-  logs
+  errorLog,
+  changeLog
 }

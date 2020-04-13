@@ -1,15 +1,17 @@
 import en from './en';
 import zh from './zh';
-import el from './el';
+import tw from './tw';
 import ja from './ja';
 import ko from './ko';
 import ru from './ru';
+import ms from './ms';
 
 export {
   en,
   zh,
-  el,
+  tw,
   ja,
   ko,
-  ru
+  ru,
+  ms,
 }

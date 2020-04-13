@@ -1,21 +1,28 @@
-const log4js = require('log4js');
-const path = require('path');
+const log4js = require("log4js");
+const path = require("path");
 
 log4js.configure({
   appenders: {
     error: {
-      type: 'file',
-      filename: path.resolve(__dirname, '../logs/error.log')
-    }
+      type: "file",
+      filename: path.resolve(__dirname, "../logs/error.log"),
+    },
+    change: {
+      type: "file",
+      filename: path.resolve(__dirname, "../logs/change.log"),
+    },
   },
   categories: {
     default: {
-      appenders: ['error'],
-      level: 'error'
-    }
-  }
+      appenders: ["change"],
+      level: "info",
+    },
+    error: {
+      appenders: ["error"],
+      level: "error",
+    },
+  },
 });
 
-const logger = log4js.getLogger('error');
-
-export default logger;
+export const errorLog = log4js.getLogger("error");
+export const changeLog = log4js.getLogger("change");
